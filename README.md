@@ -28,7 +28,10 @@ L’application doit respecter les principes de l’architecture hexagonale (cle
 - Chaque conversation possède un identifiant unique (GUID).
 - L’utilisateur peut consulter l’historique d’une conversation existante.
 
-### 3. API RESTful
+### 3. Persistance
+- L’historique des conversations doit être stocké de façon persistante (ex : fichiers JSON, base de données, etc.).
+
+### 4. API RESTful
 - Exposez des endpoints pour :
   - Créer une nouvelle conversation
   - Envoyer un message dans une conversation
@@ -36,14 +39,11 @@ L’application doit respecter les principes de l’architecture hexagonale (cle
   - Lister toutes les conversations existantes
   - Réinitialiser l’historique d’une conversation
 
-### 4. Interface utilisateur web
+### 5. Interface utilisateur web
 - Proposez une interface web simple (ex : Streamlit, React, Flask, etc.) permettant :
   - De discuter avec le chatbot
   - De visualiser l’historique
   - De démarrer une nouvelle conversation
-
-### 5. Persistance
-- L’historique des conversations doit être stocké de façon persistante (ex : fichiers JSON, base de données, etc.).
 
 ---
 
