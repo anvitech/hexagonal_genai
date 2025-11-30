@@ -1,0 +1,25 @@
+# Python bytecode files
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Test coverage reports
+.coverage
+coverage.*
+htmlcov/
+
+# Environment variables
+.env*
+
+# Environment folders
+.venv/
+venv/
+
+# Frontend files
+node_modules/
+dist/
+build/
+package-lock.json
+
+# VSCode settings
+.vscode/
