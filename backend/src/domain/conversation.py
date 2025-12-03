@@ -1,6 +1,6 @@
 """Conversation domain entity."""
 
-from dataclasses import dataclass
+from dataclasses import dataclass, asdict
 from uuid import UUID
 from datetime import datetime
 
@@ -19,6 +19,16 @@ class Conversation:
   created_at: datetime = datetime.now()
 
 
+  @classmethod
+  def from_dict(cls, data: dict) -> None:
+    """Create a conversation from a dictionary."""
+    return cls(**{
+      "id": UUID(data["id"]),
+      "messages": list(map(Message.from_dict, data["messages"])),
+      "created_at": datetime.fromisoformat(data["created_at"]),
+    })
+
+
   def __post_init__(self):
     """Initialize the conversation messages with an empty list.
 
@@ -31,3 +41,12 @@ class Conversation:
   def add_message(self, message: Message) -> None:
     """Add a message to the conversation."""
     self.messages.append(message)
+
+
+  def to_dict(self) -> dict:
+    """Convert the conversation to a dictionary."""
+    return {
+      "id": str(self.id),
+      "messages": [m.to_dict() for m in self.messages],
+      "created_at": self.created_at.isoformat()
+    }

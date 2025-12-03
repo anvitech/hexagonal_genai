@@ -18,6 +18,17 @@ class Message:
   created_at: datetime = datetime.now()
 
 
+  @classmethod
+  def from_dict(cls, data: dict) -> None:
+    """Create a conversation from a dictionary."""
+    return cls(**{
+      **data,
+      "id": UUID(data["id"]),
+      "role": MessageRole(data["role"]),
+      "created_at": datetime.fromisoformat(data["created_at"]),
+    })
+
+
   def __post_init__(self):
     """Validate the message attributes."""
     # Validate the id
@@ -26,10 +37,7 @@ class Message:
 
     # Validate the role
     if isinstance(self.role, str):
-      if self.role not in ['user', 'assistant', 'system']:
-        raise ValueError(f"Invalid role: {self.role}")
-      else:
-        self.role = MessageRole(self.role.lower())
+      self.role = MessageRole(self.role.lower())
 
     # Validate the content
     if not isinstance(self.content, str):

@@ -1,0 +1,27 @@
+{
+  "conversations": {
+    "2c27746b-bd29-4032-9045-da26f28e79aa": {
+      "id": "2c27746b-bd29-4032-9045-da26f28e79aa",
+      "messages": [],
+      "created_at": "2025-12-03T03:24:39.108731"
+    },
+    "abb3ecb0-aad2-49a2-80de-a8cf583ecf59": {
+      "id": "abb3ecb0-aad2-49a2-80de-a8cf583ecf59",
+      "messages": [
+        {
+          "id": "80fbe8d4-edae-4fa6-a8aa-76aed0898b4a",
+          "role": "user",
+          "content": "Hello, World!",
+          "created_at": "2025-12-03T14:26:48.001039"
+        },
+        {
+          "id": "8fcab046-7ebe-4622-b8cf-79a73952fb60",
+          "role": "assistant",
+          "content": "The world is beautiful!",
+          "created_at": "2025-12-03T14:26:48.001039"
+        }
+      ],
+      "created_at": "2025-12-03T03:40:27.388497"
+    }
+  }
+}
