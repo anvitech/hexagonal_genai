@@ -24,12 +24,10 @@ class Conversation:
 
     This is useful in case of no given messages
     """
-
     if self.messages is None:
       self.messages = []
 
 
   def add_message(self, message: Message) -> None:
     """Add a message to the conversation."""
-
     self.messages.append(message)

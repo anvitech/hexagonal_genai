@@ -20,7 +20,6 @@ class Message:
 
   def __post_init__(self):
     """Validate the message attributes."""
-
     # Validate the id
     if not isinstance(self.id, UUID):
       raise ValueError(f"Invalid id: {self.id}")
@@ -39,7 +38,6 @@ class Message:
 
   def to_dict(self):
     """Convert the message to a dictionary."""
-
     return {
       "id": str(self.id),
       "role": self.role.value,
