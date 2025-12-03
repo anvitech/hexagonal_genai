@@ -52,6 +52,9 @@ def test_update_conversation_success(testing_fixed_file_path):
     id=uuid.UUID("abb3ecb0-aad2-49a2-80de-a8cf583ecf59")
   )
 
+  # Get the number of messages before update
+  n_messages = len(conversation.messages)
+
   conversation.add_message(
     Message(id=uuid.uuid4(), role="user", content="Hello, World!")
   )
@@ -72,5 +75,5 @@ def test_update_conversation_success(testing_fixed_file_path):
   )
 
   assert isinstance(conversation, Conversation)
-  assert len(conversation.messages) == 2
+  assert len(conversation.messages) == n_messages + 2
   assert conversation.id == uuid.UUID("abb3ecb0-aad2-49a2-80de-a8cf583ecf59")
