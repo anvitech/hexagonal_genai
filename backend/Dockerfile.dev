@@ -1,0 +1,23 @@
+# Use an official Python runtime image
+FROM python:3.11-slim
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the requirements file to the container
+COPY requirements.txt .
+
+# Install the Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application code to the container
+COPY . .
+
+# Change the working dir
+WORKDIR /app/src/ui/api/flask_api
+
+# Expose the port the backend is running on
+EXPOSE 5000
+
+# Set the commands to run the backend
+CMD ["python", "wsgi.py"]
