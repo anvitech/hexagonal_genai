@@ -14,9 +14,11 @@ if backend_source_path not in sys.path:
 
 
 from app import create_app
+from flask_cors import CORS
 
 # Create the application
 app = create_app()
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 if __name__ == "__main__":
   # For development

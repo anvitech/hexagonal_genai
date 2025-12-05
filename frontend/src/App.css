@@ -1,0 +1,136 @@
+#root {
+  max-width: 1280px;
+  width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+/* -------------------------- Element styles -------------------------- */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  flex-grow: 1;
+}
+
+footer {
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* -------------------------- Component styles -------------------------- */
+
+.response-section {
+  flex-grow: 1;
+  margin: 1rem 0;
+  text-align: justify;
+
+  #response-content {
+    overflow-y: auto;
+  }
+
+  h3 {
+    text-align: start;
+    font-weight: 100;
+    font-size: medium;
+    margin-bottom: 2rem;
+  }
+}
+
+.message-section {
+  padding: 0.5rem;
+  background-color: rgb(30, 32, 32);
+  min-height: 200px;
+  min-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+
+  textarea {
+    flex-grow: 1;
+    resize: none;
+    overflow-y: auto;
+  }
+
+  button {
+    background-color: transparent;
+    align-self: flex-end;
+  }
+}
+textarea {
+  /* Reset default styles */
+  appearance: none;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.control-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+  button {
+    background-color: transparent;
+  }
+}
+.conversation-list {
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+li {
+  list-style-type: none;
+  cursor: pointer;
+
+  button {
+    background-color: transparent;
+  }
+}
+
+
+.loading {
+  text-align: center;
+  color: #3498db;
+  margin: 1rem 0;
+}
+
+.error {
+  text-align: center;
+  margin: 1rem 0;
+  color: #e74c3c;
+}

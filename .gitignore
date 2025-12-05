@@ -15,11 +15,15 @@ htmlcov/
 .venv/
 venv/
 
+# Flask files
+instance/
+
 # Frontend files
 node_modules/
 dist/
 build/
 package-lock.json
+coverage/
 
 # VSCode settings
 .vscode/
