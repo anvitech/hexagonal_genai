@@ -24,13 +24,13 @@ class ConversationInterface(ABC):
   """
 
   @abstractmethod
-  def create_conversation(self) -> Conversation:
+  def create_conversation(self) -> UUID:
     """Create a new conversation."""
     pass
 
 
   @abstractmethod
-  def send_message(self, conversation_id: UUID, message: str) -> None:
+  def send_message(self, conversation_id: UUID, message: str) -> str:
     """Send a message to a conversation."""
     pass
 

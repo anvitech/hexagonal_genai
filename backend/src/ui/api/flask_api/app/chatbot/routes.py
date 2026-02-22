@@ -4,8 +4,6 @@ Module for chatbot routes.
 This module contains all endpoints related to /conversations url.
 """
 
-from uuid import UUID
-
 from flask import Blueprint, current_app, request
 
 

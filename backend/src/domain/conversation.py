@@ -1,6 +1,6 @@
 """Conversation domain entity."""
 
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass
 from uuid import UUID
 from datetime import datetime
 
@@ -20,7 +20,7 @@ class Conversation:
 
 
   @classmethod
-  def from_dict(cls, data: dict) -> None:
+  def from_dict(cls, data: dict):
     """Create a conversation from a dictionary."""
     return cls(**{
       "id": UUID(data["id"]),

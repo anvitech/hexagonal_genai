@@ -1,5 +1,5 @@
 # Use an official Node.js runtime image
-FROM node:14-slim
+FROM node:20-alpine
 
 # Set the working directory in the container
 WORKDIR /app
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # Set the command to run the frontend
-CMD ["npm", "run", "dev" ,"--", "--port", "3000"]
+CMD ["npm", "run", "dev" ,"--", "--port", "3000", "--host"]
