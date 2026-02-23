@@ -1,0 +1,28 @@
+# Python bytecode files
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Test coverage reports
+.coverage
+coverage.*
+htmlcov/
+
+# Environment variables
+.env*
+
+# Environment folders
+.venv/
+venv/
+
+# Flask files
+instance/
+
+# Frontend files
+node_modules/
+dist/
+build/
+coverage/
+
+# VSCode settings
+.vscode/

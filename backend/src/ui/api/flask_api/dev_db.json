@@ -1,0 +1,42 @@
+{
+  "conversations": {
+    "66c9f17b-0b8d-4978-a921-ca697463975e": {
+      "id": "66c9f17b-0b8d-4978-a921-ca697463975e",
+      "messages": [],
+      "created_at": "2025-12-05T01:42:45.339783"
+    },
+    "f7460e62-301b-477d-994b-f06e825f2198": {
+      "id": "f7460e62-301b-477d-994b-f06e825f2198",
+      "messages": [],
+      "created_at": "2025-12-05T01:42:45.339783"
+    },
+    "94f0f2a3-75f7-4cba-b2f2-e049347f7718": {
+      "id": "94f0f2a3-75f7-4cba-b2f2-e049347f7718",
+      "messages": [
+        {
+          "id": "fdb8fcf9-d2be-40a6-94da-e28ee9c9a056",
+          "role": "user",
+          "content": "Comment tu vas ?",
+          "created_at": "2025-12-05T01:42:45.338801"
+        },
+        {
+          "id": "6efc52f0-3d8e-47b1-99ac-6c9ee80322a8",
+          "role": "assistant",
+          "content": "En tant qu'intelligence artificielle, je n'ai pas d'\u00e9tat \u00e9motionnel ou physique, mais je suis pr\u00eat \u00e0 vous aider. Comment puis-je vous \u00eatre utile aujourd'hui ?",
+          "created_at": "2025-12-05T01:42:45.338801"
+        }
+      ],
+      "created_at": "2025-12-05T01:42:45.339783"
+    },
+    "da259269-57c1-4ba7-a35c-543cb74535bb": {
+      "id": "da259269-57c1-4ba7-a35c-543cb74535bb",
+      "messages": [],
+      "created_at": "2025-12-05T13:59:02.823586"
+    },
+    "4f543153-e67f-4d22-8bf4-8b518f0f23d9": {
+      "id": "4f543153-e67f-4d22-8bf4-8b518f0f23d9",
+      "messages": [],
+      "created_at": "2025-12-05T13:59:02.823586"
+    }
+  }
+}
