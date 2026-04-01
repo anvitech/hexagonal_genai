@@ -3,7 +3,7 @@
 ## Objectif
 
 Conception d'une application web permettant à un utilisateur de discuter avec un chatbot basé sur une API d’IA générative (ex: [Cohere](https://cohere.com/))
-L’application doit respecter les principes de l’architecture hexagonale (clean architecture) et permettre de gérer plusieurs conversations avec historique.
+L’application se base sur les principes de l’architecture hexagonale (clean architecture) et permettre de gérer plusieurs conversations avec historique.
 
 ---
 
@@ -31,16 +31,14 @@ L’application doit respecter les principes de l’architecture hexagonale (cle
   - Réinitialiser l’historique d’une conversation
 
 ### 5. Interface utilisateur web
-- Proposez une interface web simple (ex : Streamlit, React, Flask, etc.) permettant :
+- GUI permettant :
   - De discuter avec le chatbot
   - De visualiser l’historique
   - De démarrer une nouvelle conversation
 
 ---
 
-### 6. Plus
+### 6. A venir...
 
 - Ajout de fonctionnalités avancées (personnalisation du prompt système, gestion des utilisateurs, etc.)
 - Interface utilisateur améliorée
-- Déploiement (Docker, cloud, etc.)
-- Tests unitaires et integration
